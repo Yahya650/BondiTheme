@@ -1,6 +1,7 @@
-# Project Name
+# BandiTheme
 
-Short description or tagline for your project.
+Just fronEnd(html,css,bootstrap) For learning Bootstrap5
+
 
 ## Table of Contents
 
