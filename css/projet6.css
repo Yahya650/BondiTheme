@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+:root {
+    --bodyColor: #eff7fa;
+    --samaColor: #33d1cc;
+    --dangerColor: #ff3150;
+    --warningColor: #ffc400;
+    --bg-color: #19283f;
+}
+/* start NavBar style */
+.navbar {
+    background-color: var(--bg-color);
+}
+.nav-link {
+    transition: .2s;
+}
+.nav-link:hover {
+    color: var(--samaColor) !important;
+}
+.active {
+    color: var(--samaColor) !important;
+}
+.navbar-toggler {
+    border: 1px solid aqua;
+}
+.fa-magnifying-glass {
+    color: var(--samaColor);
+    border-left: 1px solid var(--samaColor);
+}
+.btn {
+    background-color: var(--dangerColor);
+    color: var(--warningColor);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+/* end NavBar style */
+
+/* start section1 style */
+.section1 {
+    background-color: var(--bg-color);
+    min-height: calc(100vh - 70px);
+}
+/* end section1 style */
+
+/* start section2 style */
+.section2 {
+    min-height: 100vh;
+}
+.p-section2::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--samaColor);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon-holder {
+    height: 200px;
+}
+.icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section2 .row .h4 {
+    color: var(--warningColor);
+}
+.number {
+    font-size: 12rem;
+    color: var(--bodyColor);
+}
+.icon {
+    color: var(--samaColor);
+}
+/* end section2 style */
+
+/* start section3 style */
+.section3 {
+    background-color: var(--bodyColor);
+}
+.section3 li .actives {
+    background-color: var(--dangerColor);
+    color: var(--warningColor);
+    transition: .2s;
+}
+.section3 li .actives:hover {
+    color: black;
+    transition: .2s;
+}
+.section3 li .normal-a {
+    color: black;
+    transition: .2s;
+}
+.section3 li .normal-a:hover {
+    color: var(--dangerColor);
+    transition: .2s;
+}
+.box {
+    padding: 5px;
+}
+.section3 .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+.section3 .box:hover::before {
+    transform: translateX(0);
+}
+/* end section3 style */
+
+/* start section4 style */
+.section4 .Design {
+    max-width: 500px;
+}
+.order .text-uppercase {
+    background-color: var(--dangerColor);
+    color: var(--warningColor);
+}
+.order .text-uppercase:hover {
+    color: black;
+}
+/* end section4 style */
+
+/* start section5 style */
+.section5 {
+    background-color: var(--bodyColor);
+}
+.section5 .m-auto {
+    max-width: 500px;
+}
+.section5 .h1 {
+    color: var(--warningColor);
+}
+.section5 .px-5 {
+    background-color: var(--samaColor);
+    color: white;
+}
+/* end section5 style */
+
+/* start section7 style */
+.section7 {
+    background-color: var(--bg-color);
+}
+/* end section7 style */
+
+/* start section9 style */
+.section9 {
+    background-color: var(--warningColor);
+}
+.section9 .container input[type="email"] {
+    outline: none;
+}
+.section9 .btn {
+    background-color: var(--bg-color);
+}
+.section9 input[type="email"]::placeholder {
+    color: white;
+    font-weight: 500;
+}
+/* end section9 style */
+
+/* start section10 style */
+.section10 .fa-facebook {
+    background-color: #1877f2;
+}
+.section10 .fa-whatsapp {
+    background-color: #25d366;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.section10 .fa-youtube {
+    background-color: #ff0000;
+}
+.section10 .fa-twitter {
+    background-color: #1da1f2;
+}
+.section10 {
+    background-color: var(--bg-color);
+}
+/* end section10 style */
